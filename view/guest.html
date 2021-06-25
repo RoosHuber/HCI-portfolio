@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Topics</title>
+   <link type="text/css" href="../style/guest.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="">
+
+  </head>
+
+  <body>
+	 <div class="container">
+
+    <div class="box">
+      <a href="../index.html" class="btn btn-white btn-animation-1"><img src="../image/back.png" width="30px"></a> 
+    </div>
+
+    <h1>Guest Lecture</h1>
+
+    <button class="accordion">Assignment</button>
+     <div class="panel">
+      <h3>“I always want a functional side to what I do but I lean to artistic freedom.”</h3>
+      <p>Vincent Lindeboom is the founder of <a href="https://nextempire.net/">Next Empire</a> (an anagram of experiment) is an experience studio where they make installations and products. During the lecture Vincent talked about 10 projects that the studio made and all of them were really cool. My favourite one was <a href="https://nextempire.net/experiments/octomadness">Octomadness</a>, which took a step away from the traditional zoetrope. But the <a href="https://nextempire.net/products/artis-sleepwalk">Artis Sleepwalk</a> was not only a really cool concept, the artwork that went into it was gorgeous. </p>
+      <img src="../image/Poster_Slaapwandeling.png" width="400px">
+      <figcaption><i>The poster advertising the event</i></figcaption>
+      <p>It’s a location based explorative tour through the zoo (at twilight). While designed for children, it’s informative for everyone. Because the concept puts emphasis on exploring, there is no set path for users to follow. Along the way they can find and discover animals and what they do at night.<br/><br/> 
+      The app and the event that went with it had a goal: to switch off the light during the Amsterdam Light Festival and show people that the dark isn’t so bad. The zoo visitors could walk around after hours discovering nocturnal animals. This is really cool, because normally we walk around the zoo during the day and see half the animals sleeping. Now visitors can see the other half sleeping.</p>  
+      <img src="../image/app.png" width="400px">
+      <figcaption><i>Mock-ups of the app</i></figcaption>
+      <p>As opposed to the other projects, all that this one needs is a smartphone with an internet connection. It’s predecessor made use of beacons, but it turns out that the animals didn’t really deal very well with this technology, so they based the app on location sharing.<br/><br/>
+      This concept is another good example of how our smartphones can become useful tools. The design of the app kept twilight in the back of mind, because it's designed for night mode. The background is dark, while the things the user 'needs' to see 'light up'. I love that it combines curiosity, education and creative design. It allows the user to be as free as they want to be, to follow their own route and supports autonomous discovery. This is what I feel HCI should be.<br/><br/>
+      
+      </p>
+     </div>
+
+
+    <button class="accordion">Reflect</button>
+     <div class="panel">
+      <p>The best tip from the lecture was to make a ‘Making Of’ video, because a video travels better than an installation. This is how Vincent came into contact with a lot of his clients.<br/><br/>
+      It was really cool to see some examples of what this subject is really all about and how it can take shape in so many different ways. It's comforting to know that there are so few boundaries and that your imagination can take you so far. But what I enjoyed most is that we were shown how HCI can actually help people, next to being entertaining. I mean, I already knew, but the lecture opened my eyes to more ways of doing so. <br/><br/>
+      
+      </p>
+      
+     </div>
+
+     <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+       var panel = this.nextElementSibling;
+         if (panel.style.display === "block") {
+           panel.style.display = "none";
+          } else {
+         panel.style.display = "block";
+        }
+       });
+      }
+     </script>
+
+    
+    </div>
+ 
+   </div>
+
+  </body>
+ </html>

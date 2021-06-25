@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Lab Weeks</title>
+   <link type="text/css" href="../style/topics.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="icon" href="">
+
+  </head>
+
+  <body>
+	 <div class="container">
+
+    <div class="box">
+      <a href="../index.html" class="btn btn-white btn-animation-1"><img src="../image/back.png" width="30px"></a> 
+    </div>
+
+    <h1>Lab Weeks</h1>
+
+    <button class="accordion">Process</button>
+     <div class="panel">
+
+      <p><b>Day 1</b><br/><br/>
+        To get things started we went back to the Arduino workshop exercises and started to figure out how to connect objects to create sound. I did that with apples: <br/><br/>
+      <img class="foto" src="../image/apple piano.jpg" width="400px">
+      <p>We drew a lot of pictures with graphite pencils. While doing some research we saw lots of people use graphite, even a tutorial on making your own conductive paint, but that seemed a little dangerous. Pretty soon we landed on conductive paint, but because we weren't sure how it worked. We found working with the arduino pretty annoying and saw the alternative TouchBoard, but it was super expensive, so didn't pay it much attention.</p><br/><br/>
+      <video width="400px"  controls>
+        <source src="../image/paper button.mp4" type="video/mp4">
+      </video>
+
+      <p><b>Day 2</b><br/><br/>In the playground we found a dried out old pot of conductive paint to try out some stuff.</p>
+      <img class="foto" src="../image/paper.jpg" width="400px"> 
+      <p>The next step was to figure out if we could do that with lights aswell, maybe even sound. We also found a touchboard in the playground, which would eliminate the need for jumpercables. We did a bit of research on interactive walls and landed on the idea of making an interactive canvas. The first idea we had was to paint an unfinished picture with the paint on a canvas and that a number of things would happen if the canvas was touched. Initially we thought of 4 canvasses, one for each season. For sound we thought it would be cool to play a small part of Vivaldi's 4 seasons.   
+
+     <p><b>Day 3</b><br/><br/>The new paint we ordered came in and we decided to test how it would work on a canvas with lights:</p><br/><br/>
+     <video width="400px"  controls>
+        <source src="../image/touch.mp4" type="video/mp4">
+      </video>
+     <p>We managed to hook up our canvasses to the arduinos and make a light come on whenever the dry paint was touched.</p>
+
+     <p><b>Day 4</b><br/><br/>Today we borrowed a beamer and started thinking about animation. We talked a lot about what we wanted to animate, and it boiled down to a tree. Instead of 4 canvasses we were gonna use 1. Each branch would trigger a different animation and sound. We also looked at programmes to use for the actual projection and found MadMapper, which looked really difficult to use but turned out to be pretty easy.</p>
+ 
+     <p><b>Day 5</b><br/><br/> We tried using Processing, but the images were not easy to create. I wanted to make something that looked more organic, and I just couldn't get the hang of it. Elke managed to trigger an earlier animation she had made when the conductive paint was touched, so that was pretty cool.</p>
+     <video width="400px"  controls>
+        <source src="../image/doodle.mp4" type="video/mp4">
+      </video>
+    
+     <p><b>Day 6</b><br/><br/>Today we managed to trigger sound with a touch, with only minimal damage to my fingers:</p><br/><br/>
+     <video width="400px"  controls>
+        <source src="../image/shock.mp4" type="video/mp4">
+      </video>
+      <video width="400px"  controls>
+        <source src="../image/sound.mp4" type="video/mp4">
+      </video><br/><br/>
+      
+      <p><b>Day 7</b><br/><br/>Today we didn't do all too much. We were at home and we made all 4 of the animations (see product). </p>
+
+      <p><b>Day 8</b><br/><br/>Today we spent all day looking at code and Madmapper. This is us and half of the teachers getting everything to work smoothly:
+      <img class="foto" src="../image/looking.jpg" width="400px"> <br/><br/>
+      These were the first tests:<br/><br/>
+       <video width="400px"  controls>
+        <source src="../image/test.mp4" type="video/mp4">
+      </video>
+      <video width="400px"  controls>
+        <source src="../image/test3.mp4" type="video/mp4">
+      </video>
+       <img class="foto" src="../image/test2.jpg" width="400px">
+      We managed to make the whole thing work and planned to use the last day to cross the t's and dot the i's.</p>
+
+      <p><b>Day 9</b><br/><br/>Disaster struck. Half of the code that we had written on day 8 was not saved properly, so we spent all day trying to remember what was written. We cut the parts of the music we wanted for the animations and fought with madmapper. Eventually we came to the conslusion that we would not have time to make a filmed presenation so at the end of the day we decided to do a live demonstration at the expo.</p> <br/><br/>
+      <img class="foto" src="../image/stress.jpg" width="400px">
+      <video width="400px"  controls>
+        <source src="../image/stressed.mp4" type="video/mp4">
+      </video>
+
+     </div>
+
+
+
+    <button class="accordion">Product</button>
+     <div class="panel">
+      <video width="400px"  controls>
+        <source src="../image/final.mp4" type="video/mp4">
+      </video>
+      <video width="400px"  controls>
+        <source src="../image/main.mp4" type="video/mp4">
+      </video>
+      <video width="400px"  controls>
+        <source src="../image/Spring.mp4" type="video/mp4">
+      </video>
+      <video width="400px"  controls>
+        <source src="../image/Zomer.mp4" type="video/mp4">
+      </video>
+      <video width="400px"  controls>
+        <source src="../image/Autumn.mp4" type="video/mp4">
+      </video>
+      <video width="400px"  controls>
+        <source src="../image/Winter.mp4" type="video/mp4">
+      </video>
+
+     </div>
+
+
+
+     <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+       var panel = this.nextElementSibling;
+         if (panel.style.display === "block") {
+           panel.style.display = "none";
+          } else {
+         panel.style.display = "block";
+        }
+       });
+      }
+     </script>
+
+    
+    </div>
+ 
+   </div>
+
+  </body>
+ </html>
